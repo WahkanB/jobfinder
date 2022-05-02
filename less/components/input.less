@@ -1,0 +1,46 @@
+@import 'var.less';
+
+.form-element{
+    background-color: @white;
+    color: @grey;
+    height: 70px;
+    padding: 9px 33px 9px 25px;
+    font-size: 18px;
+    border: 0;
+
+    &:focus{
+        outline: 0;
+    }
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #999;
+    font-size: 13px;
+    
+    ;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999;
+    ;
+  }
+  
+  ::placeholder {
+    color: #999;
+    font-size: 13px;
+
+    @media  only screen  and(min-width: @tablet) {
+      font-size: 18px;
+      
+    }
+
+  }
+    select.form-element {
+    color: #999;
+    font-size: 13px; 
+  }
+  select.form-element option{
+      color: @grey;
+      font-size: 18px;
+  }
+  

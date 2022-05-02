@@ -1,0 +1,127 @@
+@import 'btn.less';
+@import 'var.less';
+
+.section-about-us {
+
+    .sub-title,
+    .title {
+        text-align: left;
+    }
+
+    .sub-title {
+        color: @dark-pink;
+    }
+
+    .title {
+        color: @dark-blue;
+        @media only screen and (min-width:@tablet) {
+          margin-bottom:40px;
+           
+           }
+    }
+
+    &-img {
+        @media only screen and (min-width:@desktop) {
+            flex-basis: calc((100% / 2) - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+    }
+
+    &-text {
+        margin-bottom: 40px;
+
+        @media only screen and (min-width:@desktop) {
+            flex-basis: calc((100% / 2) - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 50px;
+
+        }
+
+        p {
+            line-height: 30px;
+            margin-bottom: 45px;
+
+            &:nth-of-type(1) {
+                font-size: 17px;
+                font-weight: 700;
+                color: #0b0b2b;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 15px;
+                color: @gray-blue;
+            }
+        }
+
+        a {
+            border-radius: 5px;
+            text-transform: capitalize;
+
+            &:hover {
+                .btn-fill-pink-hover();
+            }
+        }
+    }
+
+    .about-us-location {
+        position: relative;
+
+        img {
+           width: 100%;
+            @media only screen and (min-width:@desktop) {
+                max-width: inherit;
+                width: 100%;
+               
+               }
+
+        }
+    }
+
+    .about-us-years {
+        padding: 35px;
+        background-color: #1f2b7b;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media only screen and (min-width:@desktop) {
+           padding: 60px 28px;
+           left: -100px;
+           
+           }
+
+        span {
+            color: @white;
+            display: block;
+            text-align: center;
+
+            &:nth-of-type(1) {
+                font-size: 20px;
+            }
+
+            &:nth-of-type(2) {
+                font-size: 38px;
+                font-weight: 600;
+                @media only screen and (min-width:@desktop) {
+                    font-size: 60px;
+                   
+                   }
+            }
+
+        }
+
+
+    }
+
+    &-container {
+        @media only screen and (min-width:@desktop) {
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+}
